@@ -1,4 +1,4 @@
-const cacheName = "Vroeginday-Engineering Portfolio-2026.03";
+const cacheName = "Vroeginday-Engineering Portfolio-2026.04";
 const contentToCache = [
     "Build/Build v2026.03.04.loader.js",
     "Build/Build v2026.03.04.framework.js",
