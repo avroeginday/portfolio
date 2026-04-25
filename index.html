@@ -46,7 +46,6 @@
     <script src="Build/Build v2026.04.24.loader.js"></script>
     <script>
       var canvas = document.querySelector("#unity-canvas");
-
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
         var meta = document.createElement('meta');
@@ -57,7 +56,6 @@
         canvas.style.height = "100vh";
         canvas.style.position = "fixed";
       }
-
       createUnityInstance(canvas, {
         arguments: [],
         dataUrl: "Build/Build v2026.04.24.data",
@@ -67,7 +65,8 @@
         companyName: "Vroeginday",
         productName: "Engineering Portfolio",
         productVersion: "2026.04",
-        matchWebGLToCanvasSize: true,
+        matchWebGLToCanvasSize: false,
+        devicePixelRatio: 1,
       }).then((unityInstance) => {
       }).catch((message) => {
         alert(message);
